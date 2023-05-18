@@ -1,0 +1,142 @@
+@mixin btn-sm-modify{
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+}
+@mixin btn-base{
+    padding: 0.5rem ;
+    border-radius: 0.2rem;
+    font-weight: 600;
+}
+
+$color-main: #0075FF;
+
+.btn-main{
+    @include btn-base();
+    background-color: $color-main;
+    color: white;
+    border: none;
+    border: solid 1px $color-main;
+
+    &:hover{
+        background-color: white;
+        color: $color-main
+    }
+
+    &-s {
+        @extend .btn-main;
+        @include btn-sm-modify();
+    }
+}
+.btn-explore{
+    margin-top: 20px;
+    width: 180px;
+    height: 50px;
+    background-color: $color-main;
+    color: white;
+    border: none;
+    border: solid 1px $color-main;
+    border-radius: 50px;
+    color: black;
+    font-weight: 600;
+    &:hover{
+        background-color: white;
+        color: $color-main
+    }
+
+}
+
+.btn-sec{
+    @include btn-base();
+    color: black;
+    background-color: transparent;
+    border: none;
+
+    &:hover{
+        color:#888
+    }
+
+    &-s{
+        @extend .btn-sec;
+        @include btn-sm-modify();
+    }
+}
+
+.main-menu{
+   margin-bottom: 0;
+    li{
+        display: inline;
+        padding: 1rem;
+        font-size: 1rem ;
+        list-style: none;
+        
+        a{
+            color: #000;
+            text-decoration: none;
+            &:hover{
+                padding-bottom: 20px;
+                border-bottom: thick solid $color-main;
+            }
+        }
+    }
+}
+
+.icon-sm{
+    margin: auto 0 auto 10px;
+    i{
+        font-size: 2rem;
+        padding: 1.1rem 1.4rem;
+        color: $color-main;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.394) ;
+        
+    }
+}
+
+.benefit{
+    display: flex;
+    flex-direction: column;
+    .icon{
+        color: $color-main;
+        font-size: 4rem;
+        text-align: center;
+    }
+    .description{
+        margin-top: 10px;
+        height: 150px;
+        .title{
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .text{
+            color: #888;
+            font-size: 600;
+            text-align: center;
+        }
+    }
+    .cta{
+        margin-top: 2.8rem;
+        color: $color-main;
+        font-weight: 500;
+        text-align: center;
+    }
+}
+
+.icon-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .icon{
+        color: $color-main;
+        font-size: 5rem;
+        padding: 0;
+        text-align: center;
+        margin-top: 1.2rem;
+    }
+    .title{
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: center;
+    }
+}

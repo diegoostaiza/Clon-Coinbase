@@ -1,0 +1,331 @@
+@use "components";
+@mixin section-display{
+    width: 100%;
+    padding: 2rem 1rem;
+    margin: auto;
+    max-width: 1000px;
+}
+html{
+    min-width: 100%;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    border-bottom: solid thin #ddd;
+    background: white;
+}
+.logo a img{
+    max-width: 7rem;
+}
+.sec-home{
+    display: flex;
+    align-items: center;
+    @include section-display();
+    .home-cta{
+        width: 400px;
+        height: 400px;
+        .cta-text{
+            color: components.$color-main;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 0.5rem;
+        }
+        .home-title{
+            width: 20rem;
+            font-weight: 700;
+            font-size: 3rem;
+            padding: 0.5rem;
+        }
+        .home-description{
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 0.5rem;
+        }
+        .lead-magnet{
+            .input-col{
+                max-width: 200px;
+            }
+        }
+    }
+}
+
+.sec-explore{
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 4rem;
+    .img-explore{
+        width:200px;
+        height: 90%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .explore{
+        margin-left: 2rem;
+        width: 80%;
+        height: 90%;
+        .explore-title{
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .explore-content{
+            width: 75%;
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+
+    }
+}
+
+.home-img{
+    width: 600px;
+    height: 600px;
+}
+.home-img img{  
+    object-fit: contain;
+    object-position: 0% 50%;
+    width: 100%;
+    height: 100%;
+}
+.sec-features{
+    @include section-display();
+    max-width: 1200px;
+    .intro{
+        text-align: center;
+    }
+    h3{
+        font-size: 2.5rem;
+        padding: 15px 0;
+    }
+    p{
+        font-size: 1rem;
+        color: #888;
+    }
+    .features{   
+        display: flex;
+        gap: 1rem;
+        margin-top: 5rem;
+        .text{
+            max-width: 40%;
+            .feacture{
+                margin-top:1rem ;
+                display: flex;
+                flex-direction: row;
+                align-items: baseline;
+                .description-title{
+                    font-size: 1.25rem;
+                    margin-left:50px ;
+                    margin-top: 1rem;
+                }
+                .description-text{ 
+                    margin-left:50px ;
+                }
+            }
+        }
+        .image{
+            
+            img{
+                object-fit: contain;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+.sec-benefits{
+    @include section-display();
+    max-width: 1000px;
+    .intro{
+        @extend .sec-features;
+        text-align: center;
+    }
+    .cards{
+        .benefit{
+            margin-left: 1rem;
+        }
+    }
+}
+.sec-kpis{
+    background-color: components.$color-main;
+    color: white;
+    padding: 2.5rem;
+    width: 100%;
+    margin: 0;
+    .kpi{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .number{
+            font-size: 3.5rem;
+            font-weight: 600;
+        }
+        .desc{
+            font-size: 1rem;
+            color: #ffffffaa;
+        }
+    }
+}
+.sec-onboarding{
+    .intro{
+        @extend .sec-features;
+        text-align: center;
+    }
+    .steps{
+        max-width: 1000px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 4rem;
+        margin: auto;
+        .step-separator{
+            flex: 1;
+            border-top: solid 2px #ddd;
+            margin: 0 0.2rem;
+        }
+    }
+}
+.sec-footer-cta{
+    margin-top: 5rem;
+    background-color: #f4f8fe;
+    padding: 5rem;
+    background-image: url("../assets/img/footer.webp");
+    background-repeat: no-repeat;
+    background-position: right;
+    .footer-cta{
+        width: 50%;
+        padding: 0 7.8rem;
+        .cta-title{
+            font-size: 2rem;
+        }
+        .cta-description{
+            padding: 10px 0;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    }
+}
+.footer-complement{
+    width: 100%;
+    font-size: 0.8rem;
+    text-align: start;
+    padding: 0 8rem;
+    color: #888;
+    margin-bottom: 5rem;
+}
+
+@media (max-width: 768px){
+    .sec-home{
+        
+        .home-cta{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%; 
+        }
+        .cta-text{
+           text-align: center;
+        }
+        .home-title{
+            text-align: center;
+        }
+        .home-description{
+            width: 50%;
+            font-size: 1rem;
+            text-align: center;
+        }
+        .lead-magnet{
+            .input-col{
+                max-width: 200px;
+                text-align: center;
+            }
+        }
+    }
+    .sec-features{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .feacture{
+            min-width: 400px;
+            .description-title{
+                font-size: 1rem;
+            }
+            .description-text{
+                font-size: 0.8rem;
+
+            }
+        }
+
+    }
+    
+    .sec-onboarding{
+        .steps{
+            flex-direction: column;
+            .icon-desc{
+                .title{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .sec-footer-cta{
+        padding: 0;
+        background-image: none;
+        background: #113355;
+        color: white;
+        .footer-cta{
+            text-align: center;
+            width: 100%;
+            padding: 20px 5rem;
+            .cta-description{
+                color: white;
+            }
+        }
+
+    }
+    .footer-complement{
+        margin-top: 15px;
+        padding: 0 2rem;
+    }
+    .sec-explore{
+        padding: 0;
+        margin: 0 auto;
+        .explore{
+            width: 80%;
+            padding: 0 1rem;
+            .explore-title{
+                font-size: 1.5rem;
+                margin: 0;
+            }
+            .explore-content{
+                width: 100%;
+                font-size: 0.9rem;
+                font-weight: 500;
+            }
+            .btn-explore{
+                height: 35px;
+                margin-top: 5px;
+            }
+        }
+    }
+}

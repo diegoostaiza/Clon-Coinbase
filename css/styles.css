@@ -1,0 +1,448 @@
+.btn-main, .btn-main-s {
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  font-weight: 600;
+  background-color: #0075FF;
+  color: white;
+  border: none;
+  border: solid 1px #0075FF;
+}
+.btn-main:hover, .btn-main-s:hover {
+  background-color: white;
+  color: #0075FF;
+}
+.btn-main-s {
+  font-size: 1rem;
+  padding: 0.3rem 1rem;
+}
+
+.btn-explore {
+  margin-top: 20px;
+  width: 180px;
+  height: 50px;
+  background-color: #0075FF;
+  color: white;
+  border: none;
+  border: solid 1px #0075FF;
+  border-radius: 50px;
+  color: black;
+  font-weight: 600;
+}
+.btn-explore:hover {
+  background-color: white;
+  color: #0075FF;
+}
+
+.btn-sec, .btn-sec-s {
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  font-weight: 600;
+  color: black;
+  background-color: transparent;
+  border: none;
+}
+.btn-sec:hover, .btn-sec-s:hover {
+  color: #888;
+}
+.btn-sec-s {
+  font-size: 1rem;
+  padding: 0.3rem 1rem;
+}
+
+.main-menu {
+  margin-bottom: 0;
+}
+.main-menu li {
+  display: inline;
+  padding: 1rem;
+  font-size: 1rem;
+  list-style: none;
+}
+.main-menu li a {
+  color: #000;
+  text-decoration: none;
+}
+.main-menu li a:hover {
+  padding-bottom: 20px;
+  border-bottom: thick solid #0075FF;
+}
+
+.icon-sm {
+  margin: auto 0 auto 10px;
+}
+.icon-sm i {
+  font-size: 2rem;
+  padding: 1.1rem 1.4rem;
+  color: #0075FF;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.394);
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+}
+.benefit .icon {
+  color: #0075FF;
+  font-size: 4rem;
+  text-align: center;
+}
+.benefit .description {
+  margin-top: 10px;
+  height: 150px;
+}
+.benefit .description .title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.benefit .description .text {
+  color: #888;
+  font-size: 600;
+  text-align: center;
+}
+.benefit .cta {
+  margin-top: 2.8rem;
+  color: #0075FF;
+  font-weight: 500;
+  text-align: center;
+}
+
+.icon-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon-desc .icon {
+  color: #0075FF;
+  font-size: 5rem;
+  padding: 0;
+  text-align: center;
+  margin-top: 1.2rem;
+}
+.icon-desc .title {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+html {
+  min-width: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  border-bottom: solid thin #ddd;
+  background: white;
+}
+
+.logo a img {
+  max-width: 7rem;
+}
+
+.sec-home {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 1rem;
+  margin: auto;
+  max-width: 1000px;
+}
+.sec-home .home-cta {
+  width: 400px;
+  height: 400px;
+}
+.sec-home .home-cta .cta-text {
+  color: #0075FF;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+.sec-home .home-cta .home-title {
+  width: 20rem;
+  font-weight: 700;
+  font-size: 3rem;
+  padding: 0.5rem;
+}
+.sec-home .home-cta .home-description {
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+}
+.sec-home .home-cta .lead-magnet .input-col {
+  max-width: 200px;
+}
+
+.sec-explore {
+  width: 100%;
+  height: 250px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 4rem;
+}
+.sec-explore .img-explore {
+  width: 200px;
+  height: 90%;
+}
+.sec-explore .img-explore img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.sec-explore .explore {
+  margin-left: 2rem;
+  width: 80%;
+  height: 90%;
+}
+.sec-explore .explore .explore-title {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+.sec-explore .explore .explore-content {
+  width: 75%;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.home-img {
+  width: 600px;
+  height: 600px;
+}
+
+.home-img img {
+  object-fit: contain;
+  object-position: 0% 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.sec-features, .sec-onboarding .intro, .sec-benefits .intro {
+  width: 100%;
+  padding: 2rem 1rem;
+  margin: auto;
+  max-width: 1000px;
+  max-width: 1200px;
+}
+.sec-features .intro, .sec-onboarding .intro .intro, .sec-benefits .intro .intro {
+  text-align: center;
+}
+.sec-features h3, .sec-onboarding .intro h3, .sec-benefits .intro h3 {
+  font-size: 2.5rem;
+  padding: 15px 0;
+}
+.sec-features p, .sec-onboarding .intro p, .sec-benefits .intro p {
+  font-size: 1rem;
+  color: #888;
+}
+.sec-features .features, .sec-onboarding .intro .features, .sec-benefits .intro .features {
+  display: flex;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+.sec-features .features .text, .sec-onboarding .intro .features .text, .sec-benefits .intro .features .text {
+  max-width: 40%;
+}
+.sec-features .features .text .feacture, .sec-onboarding .intro .features .text .feacture, .sec-benefits .intro .features .text .feacture {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.sec-features .features .text .feacture .description-title, .sec-onboarding .intro .features .text .feacture .description-title, .sec-benefits .intro .features .text .feacture .description-title {
+  font-size: 1.25rem;
+  margin-left: 50px;
+  margin-top: 1rem;
+}
+.sec-features .features .text .feacture .description-text, .sec-onboarding .intro .features .text .feacture .description-text, .sec-benefits .intro .features .text .feacture .description-text {
+  margin-left: 50px;
+}
+.sec-features .features .image img, .sec-onboarding .intro .features .image img, .sec-benefits .intro .features .image img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.sec-benefits {
+  width: 100%;
+  padding: 2rem 1rem;
+  margin: auto;
+  max-width: 1000px;
+  max-width: 1000px;
+}
+.sec-benefits .intro {
+  text-align: center;
+}
+.sec-benefits .cards .benefit {
+  margin-left: 1rem;
+}
+
+.sec-kpis {
+  background-color: #0075FF;
+  color: white;
+  padding: 2.5rem;
+  width: 100%;
+  margin: 0;
+}
+.sec-kpis .kpi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec-kpis .kpi .number {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.sec-kpis .kpi .desc {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6666666667);
+}
+
+.sec-onboarding .intro {
+  text-align: center;
+}
+.sec-onboarding .steps {
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4rem;
+  margin: auto;
+}
+.sec-onboarding .steps .step-separator {
+  flex: 1;
+  border-top: solid 2px #ddd;
+  margin: 0 0.2rem;
+}
+
+.sec-footer-cta {
+  margin-top: 5rem;
+  background-color: #f4f8fe;
+  padding: 5rem;
+  background-image: url("../assets/img/footer.webp");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.sec-footer-cta .footer-cta {
+  width: 50%;
+  padding: 0 7.8rem;
+}
+.sec-footer-cta .footer-cta .cta-title {
+  font-size: 2rem;
+}
+.sec-footer-cta .footer-cta .cta-description {
+  padding: 10px 0;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.footer-complement {
+  width: 100%;
+  font-size: 0.8rem;
+  text-align: start;
+  padding: 0 8rem;
+  color: #888;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+  .sec-home .home-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .sec-home .cta-text {
+    text-align: center;
+  }
+  .sec-home .home-title {
+    text-align: center;
+  }
+  .sec-home .home-description {
+    width: 50%;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .sec-home .lead-magnet .input-col {
+    max-width: 200px;
+    text-align: center;
+  }
+  .sec-features, .sec-benefits .intro, .sec-onboarding .intro {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sec-features .feacture, .sec-benefits .intro .feacture, .sec-onboarding .intro .feacture {
+    min-width: 400px;
+  }
+  .sec-features .feacture .description-title, .sec-benefits .intro .feacture .description-title, .sec-onboarding .intro .feacture .description-title {
+    font-size: 1rem;
+  }
+  .sec-features .feacture .description-text, .sec-benefits .intro .feacture .description-text, .sec-onboarding .intro .feacture .description-text {
+    font-size: 0.8rem;
+  }
+  .sec-onboarding .steps {
+    flex-direction: column;
+  }
+  .sec-onboarding .steps .icon-desc .title {
+    text-align: center;
+  }
+  .sec-footer-cta {
+    padding: 0;
+    background-image: none;
+    background: #113355;
+    color: white;
+  }
+  .sec-footer-cta .footer-cta {
+    text-align: center;
+    width: 100%;
+    padding: 20px 5rem;
+  }
+  .sec-footer-cta .footer-cta .cta-description {
+    color: white;
+  }
+  .footer-complement {
+    margin-top: 15px;
+    padding: 0 2rem;
+  }
+  .sec-explore {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .sec-explore .explore {
+    width: 80%;
+    padding: 0 1rem;
+  }
+  .sec-explore .explore .explore-title {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  .sec-explore .explore .explore-content {
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .sec-explore .explore .btn-explore {
+    height: 35px;
+    margin-top: 5px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
